@@ -193,10 +193,12 @@ body {
   
   #contact {
     height: 200px;
-    width: 100%;
+    width: 1200px;
     margin: auto;
     background-color: black;
+    
     justify-content: center;
+    
     
   }
 
