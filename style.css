@@ -8,7 +8,9 @@ body {
     margin: 0;
     font-family: "Helvetica", sans-serif;
     color: seashell;
-    background-color: black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-image: url("./images/messy.jpg");
+    background-size: inherit;
     font-size: 22px;
     text-align: center;
     
@@ -19,7 +21,7 @@ body {
     position: relative; 
     width: 100%; 
     height: 100%; 
-    background-color: black; 
+    
     background-repeat: no-repeat; 
     background-size: 20%; 
     background-position: 50% 50%; 
@@ -100,11 +102,14 @@ body {
   
   #about .content {
     margin: 220px auto;
-    background-color: black;
+    
     width: 100%;
     z-index: 10;
     position: absolute;
+    
   }
+
+  
   
   /* Project Section */
   
@@ -141,7 +146,7 @@ body {
   }
   
   #skills {
-    background-image: url("./images/img-skills-background.png");
+    
     height: 500px;
     padding-top: 70px;
   }
@@ -195,7 +200,7 @@ body {
     height: 200px;
     width: 1200px;
     margin: auto;
-    background-color: black;
+    
     
     justify-content: center;
     
