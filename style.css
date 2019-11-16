@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -196,16 +197,30 @@ body {
 
   
   /* Contact Section */
-  
+  #contDiv {
+    height: 400px;
+    width: 1200px;
+    justify-content: center;
+    margin: auto;
+  }
+
   #contact {
     height: 200px;
-    width: 1200px;
+    width: 425px;
     margin: auto;
     
     
     justify-content: center;
     
-    
+    -webkit-transition: all 2.5s ease; /* Safari */
+    transition: all 2.5s ease;
+    }
+
+  #contact:focus {
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+    outline: 0;
   }
 
   .icons {
@@ -223,5 +238,10 @@ body {
     border-radius: 100%;
     width: 30px;
     height: 30px;
+  }
+
+  footer {
+    height: 10px;
+    position: relative;
   }
   
