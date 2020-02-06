@@ -165,7 +165,7 @@ body {
     padding: 10px;
     margin: 5px 20px;
     background-color: #2f849b;
-    flex-basis: 280px;
+    flex-basis: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,6 +196,10 @@ body {
   #tech {
     display: none;
   } 
+
+  #learn {
+    display: none;
+  }
 
   
   /* Contact Section */
