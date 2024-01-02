@@ -63,6 +63,9 @@ body {
   .first {
     color: #2f849b;
   }
+  .red {
+    color: red;
+  }
   header h1 {
     height: 50px;
     padding-left: 10px;
