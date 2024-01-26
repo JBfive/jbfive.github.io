@@ -102,12 +102,12 @@ body {
     height: 700px;
     padding-top: 70px;
     z-index: 1;
-    background-color: black;
   }
   
   #about .content {
     margin: 220px auto;
     
+    background-color: black;
     width: 100%;
     z-index: 10;
     position: absolute;
