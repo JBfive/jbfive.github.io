@@ -1,12 +1,12 @@
-Initializing terminal interface.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj --><br/>
-<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj --><br/>
-<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj --><br/>
+Initializing terminal interface.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj --><br/>
+<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj --><br/>
+<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj --><br/>
 visitor@terminal:~$ cd ~/portfolio/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
 visitor@terminal~$ cat <!-- kjsdfhkjdhsfkjdshfkj -->intro.txt<br/><br/>
 <!-- sjkfhskjf -->
 
-Welcome to <!-- kjsdfhkjdhsfkjdshfkj --> James Tuesday Pasc<!-- kjsdfhkjdhsfkjdshfkj -->hall's digital domain<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
-<p>You are stuck here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
+Welcome to<!-- kjsdfhkjdhsfkjdshfkj --> James Tuesday Pasc<!-- kjsddshfkj -->hall's digital domain<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+<p>You are stuck here.</p> <!-- ksjdokhdfgfkjhafkjhakf -->
 <p>You cannot escape</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
 <p>This is extra.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
 
