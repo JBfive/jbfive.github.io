@@ -1,3 +1,10 @@
+/* Universal Styles */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0;
     background: black;
