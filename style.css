@@ -20,7 +20,7 @@ body {
   
   .input-line {
     display: flex;
-    align-items: center;
+    align-items: left;
   }
   
   .terminal-input {
