@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>James T Paschall Portfolio</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="flex-container">
+    <h1><span class="first">James</span> T Paschall</h1>
+
+    <!-- Navagation Menu -->
+    
+    <nav>
+      <span><a href="#about">About Me</a></span>
+      <span><a href="#project">Projects</a></span>
+      <span><a href="#skills">Skills</a></span>
+      <span><a href="#contact" tabindex="1" style="outline: 0;" id=cont>Contact Info</a></span>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+
+  <div class="main">
+
+    <!-- About Me Section -->
+    
+    <div id="about" class="flex-container">
+        <!-- div id="particles-js" -->
+          <div class="content">
+            <h2>About Me</h2>
+            
+            <h5 class="first">Welcome to my portfolio. Most of my friends call me Jym.</h5>
+            <h5 class="first">I am a technically proficient and meticulous Senior DevOps Engineer with 6+ years of experience.</h5> 
+            <h5 class="first">I am a trusted leader and key contributor to both Airbiquity's Global Operations and Cloud Platform teams,</h5>
+            <h5 class="first">supporting two major OEM platforms. I leverage my expertise in Terraform and AWS to design, implement,</h5>
+            <h5 class="first">and optimize scalable and secure infrastructure solutions, as well as troubleshoot</h5>
+            <h5 class="first">complex networking and application issues across cloud and on-prem environments.</h5>
+            <br>
+            <h5 class="first">As a subject matter expert on terraform and Airbiquity's infrastructure and a team player, I collaborate with </h5>
+            <h5 class="first">cross-functional teams to provide rapid and effective solutions, coupled with clear and concise communication. </h5>
+            <h5 class="first">I also showcase my leadership qualities by mentoring junior engineers, initiating process improvements, and driving innovation.</h5>
+            <h5 class="first">I am passionate about learning and growing as a DevOps professional, currently pursuing a certification in</h5>
+            <h5 class="first">Solutions Architecture on AWS and expanding my knowledge of Kubernetes.</h5>
+            <br>
+            <h5 class="first">Feel free to <a href="#contact" class="first">contact me</a> for work, collaborations, or critiques.</h5>
+            <h2 class="red">This site is currently under maintenance</h2>
+          </div>
+        <!-- /div -->
+    </div>
+
+    <!-- Project Section -->
+
+    <div id="project">
+      <h2>Projects</h2>
+      <h4>A quick glance at the work I did as a student</h4>
+      <div class="flex-container items">
+        <div class="item">
+            <a href="http://vacuous-coal.surge.sh/" target="_blank">
+              <img src="./images/Jammming React.png" />
+            </a>  
+            <span>Jammming React</span>
+          </div>
+        <div class="item">
+          <a href="https://github.com/JBfive/Ravenous" target="_blank">  
+            <img src="./images/Ravenous React.png" />
+          </a>
+          <span>Ravenous React</span>
+        </div>
+        <div class="item">
+          <a href="https://github.com/JBfive/wizards" target="_blank">
+            <img src="./images/wizards.jpeg" />
+          </a>
+          <span>Wizard Game</span>
+        </div>
+        
+        <div class="item">
+            <a href="https://github.com/JBfive/portfolio" target="_blank">
+              <img src="./images/img-portfolio.png" />
+            </a>
+            <span>Portfolio Code</span>
+          </div>
+      </div>
+    </div>
+
+    <!-- Skill Section -->
+
+    <div id="skills">
+      <h2 id="hButton">Hard Skills</h2>
+      <h2 id="sButton">Soft Skills</h2>
+      <h2 id="tButton">Technologies Used</h2>
+      <h2 id="lButton">Still Learning</h2>
+      <div class="flex-container skills">
+        <div id="hard-skill" class="skill">
+          <h4>Hard Skills</h4>
+            <p>Terraform, Infrasturcture as Code (IaC), Amazon Web Services (AWS), Network Administration, Application Infrastructure Design, Automation, Troubleshooting, Documentation, Cloud Computing, DevOps, Solution Archicture, System Administration, CI/CD, Virtualization, CIS Benchmarks, DNS Management, Linux-based Operating Systems, VIM, Immutable Infrastructure, Bash Scripting, Web Development, Data Structures, Debugging, Problem Solving, Object Orientated Programming, Version Control</p>
+        </div>
+        <div id="soft-skill" class="skill">
+          <h4>Soft Skills</h4>
+            <p>Leadership, Critical Thinking, Analytical, Cross-functional Team Leadership, Cross-team Collaberation, Research, Agile Methodologies, Team Building, Communication, Creativity, Adaptability, Willingness to Learn, Dependable, Collaboration, Inquisitiveness, Enthusiasm, Positive Attitude, Excellent Written Skills</p>           
+        </div>
+        <div id="tech" class="skill">
+          <h4>Tech Used</h4>
+            <p>Terraform, Terraform Workspaces, HCL, Linux, Ansible, Jenkins, Microsoft Office, Bash/zsh, Git, Gitlab, Github, Visual Studio Code, Sublime, Atom, AWS-nuke, Prowler, Networking and Monitoring tools (Datadog, Opsview, Opsgenie, AWS-Cloudwatch, AWS-Cloudtrail, etc), SSH, SSL, Splunk, HTML5, CSS, ES6, Redux, React, jQuery, Bootstrap, AJAX, JSON, MySQL, SQLite, MongoDB, Node.js, Angular 6, Express.js, Socket.io, Mongoose, NPM, Mojs.io, Spring MVC, Spring Boot, Tomcat, JSP, JPA, Serverlets, Flask, Django, Bcrypt, Regex, Postman</p>
+        </div>
+        <div id="learn" class="skill">
+          <h4>Still Learning</h4>
+          <h5>My List:</h5>
+          <p>Kubernetes, Containerization, Solutions Architecture (AWS),   </p>
+          <br>
+          <h5>Learning Platforms:</h5>
+          <p>A Cloud Guru, Head First JavaScript, Cracking the Coding Interview, Stack Overflow, YouTube, GeeksForGeeks, W3Schools, Codecademy, Codesignal, Codewars</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contact Section -->
+    <div id=contDiv>
+      <div id="contact" tabindex="1">
+        <h2 class="name"><span class="first">James</span> T Paschall</h2>
+        
+        <a href="mailto:beautuesday@gmail.com">
+            <h5> beautuesday@gmail.com </h5>
+        </a>
+        <h5>206-499-7442</h5>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/jamestuesdaypaschall/" target="_blank">
+            <img id="linkedin" src="images/linkedin.png" alt="linkedin logo">
+          </a>
+        </div>
+        <div class="icons">
+          <a href="https://www.github.com/JBfive" target="_blank">
+            <img id="github" src="images/github.png" alt="github logo">
+          </a>
+          
+        </div>
+        <br>
+        <a href="https://github.com/JBfive/resume/raw/master/Resume%20James%20T%20Paschall.pdf">Downloadable Resume</a>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="./main.js" type="text/javascript"></script>
+  </body>
+</html>
