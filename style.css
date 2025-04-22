@@ -35,6 +35,11 @@ body {
     flex: 1;
   }
 
+  a {
+	color: #33ff33;
+	text-decoration: none;
+}
+
   @keyframes blink {
     50% { opacity: 0; }
   }

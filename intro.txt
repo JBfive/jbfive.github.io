@@ -1,8 +1,11 @@
-<span id="a">code@nerve</span>:<span id="b">~</span><span id="c">$</span> cd CodeNerve/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
-<span id="a">coder@nerve</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->codenerve.txt<br/><br/>
-My favorite code quote, "<span id="k">Code for Everyone</span>". <!-- sjkfhskjf -->
+Initializing terminal interface...<br/>
+<!-- kjsdfhkjdhsfkjdshfkj -->...<br/>
+<!-- kjsdfhkjdhsfkjdshfkj -->...<br/>
+<span id="a">visitor@terminal</span>:<span id="b">~</span><span id="c">$</span> cd portfolio/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
+<span id="a">visitor@terminal</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->intro.txt<br/><br/>
+<span id="k">I'm your huckleberry</span> <!-- sjkfhskjf -->
 
-Hey There! This is the portflio website in the skin of a terminal.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>You can see that, this is how your portfolio would look like.</p>
+Welcome to James Tuesday Paschall's digital domain<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 <p>You can introduce yourself here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
 <p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
 <p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
