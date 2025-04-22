@@ -26,12 +26,12 @@ body {
   }
   
   .cursor {
-    animation: blink 1s steps(1) infinite;
     display: inline-block;
     width: 8px;
     height: 1em;
     background-color: #33ff33;
     margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
   }
   
   @keyframes blink {
