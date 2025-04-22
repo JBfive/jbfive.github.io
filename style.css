@@ -11,6 +11,7 @@ body {
     color: #33ff33;
     font-family: monospace;
     overflow-x: hidden;
+    text-align: center;
   }
   
   .terminal {
