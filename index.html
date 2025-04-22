@@ -52,11 +52,16 @@
         if (e.key === 'Enter') {
           const command = input.value.trim();
           const inputLine = input.parentElement;
-          inputLine.innerHTML = `> ${command}`;
+          const promptSpan = document.createElement('span');
+          promptSpan.textContent = '> ' + command;
+          inputLine.innerHTML = '';
+          inputLine.appendChild(promptSpan);
           output += `${command}\n`;
           processCommand(command);
         }
       });
+
+      input.focus();
     }
 
     function processCommand(command) {
