@@ -1,5 +1,5 @@
 class Typer {
-    constructor(file, speed = 4) {
+    constructor(file, speed = 1) {
         this.text = '';
         this.index = 0;
         this.speed = speed;
@@ -90,5 +90,5 @@ class Typer {
     }
 }
 
-const typer = new Typer('intro.txt', 4);
+const typer = new Typer('intro.txt', 1);
 window.addEventListener('DOMContentLoaded', () => typer.init());
