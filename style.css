@@ -5,7 +5,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
     padding: 1rem;
-  }
+}
 
 .terminal {
     max-width: 800px;
@@ -13,7 +13,17 @@ body {
     white-space: pre-wrap;
     overflow-y: auto;
     height: 90vh;
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    color: #33ff33;
+    font: inherit;
+    outline: none;
+    width: 100%;
   }
+ 
 
 .cursor {
     display: inline-block;
@@ -22,7 +32,7 @@ body {
     height: 1.2em;
     animation: blink 1s steps(1) infinite;
     vertical-align: bottom;
-  }
+}
 
 @keyframes blink {
     50% { background: transparent; }

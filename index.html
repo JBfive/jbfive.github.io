@@ -41,6 +41,40 @@
         setTimeout(typeLine, 30);
       } else {
         terminal.innerHTML = output + '\n> <span class="cursor"></span>';
+        enableCommandInput();
+      }
+    }
+
+    function enableCommandInput() {
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'terminal-input';
+      input.autofocus = true;
+
+      terminal.appendChild(input);
+
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const command = input.value.trim();
+          input.remove();
+          processCommand(command);
+        }
+      });
+    }
+
+    function processCommand(command) {
+      output += command + '\n';
+
+      if (command === 'projects') {
+        output += 'Opening resume and projects page...\n';
+        terminal.innerHTML = output + '<span class="cursor"></span>';
+        setTimeout(() => {
+          window.location.href = 'resume.html';
+        }, 1000);
+      } else {
+        output += 'Unknown command. Try "projects" or "games".\n';
+        terminal.innerHTML = output + '\n> <span class="cursor"></span>';
+        enableCommandInput();
       }
     }
 
