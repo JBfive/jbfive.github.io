@@ -1,9 +1,9 @@
 Initializing terminal interface...<br/>
 <!-- kjsdfhkjdhsfkjdshfkj -->...<br/>
 <!-- kjsdfhkjdhsfkjdshfkj -->...<br/>
-<span id="a">visitor@terminal</span>:<span id="b">~</span><span id="c">$</span> cd portfolio/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
-<span id="a">visitor@terminal</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->intro.txt<br/><br/>
-<span id="k">I'm your huckleberry</span> <!-- sjkfhskjf -->
+visitor@terminal:~$ cd portfolio/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
+visitor@terminal~$ cat <!-- kjsdfhkjdhsfkjdshfkj -->intro.txt<br/><br/>
+I'm your huckleberry <!-- sjkfhskjf -->
 
 Welcome to James Tuesday Paschall's digital domain<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 <p>You can introduce yourself here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
