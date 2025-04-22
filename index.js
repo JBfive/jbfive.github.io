@@ -1,67 +1,94 @@
-const terminal = document.getElementById('terminal');
-    const lines = [
-      "Initializing terminal interface...",
-      "Welcome to James Tuesday Paschall's digital domain.",
-      "", 
-      "Available commands:",
-      "  - projects     View portfolio and resume",
-      "  - games        Play tic-tac-toe, snake, roll dice",
-      "", 
-      "Type a command to proceed."
-    ];
-
-    let currentLine = 0;
-    let charIndex = 0;
-    let output = '';
-
-    function renderInputLine() {
-      terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus></div>`;
-      enableCommandInput();
+class Typer {
+    constructor(file, speed = 3) {
+        this.text = '';
+        this.index = 0;
+        this.speed = speed;
+        this.file = file;
+        this.accessCount = 0;
+        this.deniedCount = 0;
+        this.accessTimer = null;
+        this.typeTimer = null;
+        this.consoleElement = document.getElementById('terminal');
     }
 
-    function typeLine() {
-      if (currentLine < lines.length) {
-        const line = lines[currentLine];
-        if (charIndex < line.length) {
-          output += line.charAt(charIndex);
-          charIndex++;
-          terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span></div>`;
+    init() {
+        this.accessTimer = setInterval(() => this.updateCursor(), 500);
+
+        fetch(this.file)
+            .then(res => res.text())
+            .then(data => {
+                this.text = data.trimEnd();
+                this.startTyping();
+            })
+            .catch(err => {
+                console.error('Failed to load file:', err);
+            });
+
+        document.addEventListener('keydown', e => this.handleKey(e));
+    }
+
+    startTyping() {
+        this.typeTimer = setInterval(() => {
+            this.step();
+            if (this.index >= this.text.length) {
+                clearInterval(this.typeTimer);
+            }
+        }, 30);
+    }
+
+    step() {
+        if (this.index <= this.text.length) {
+            const visibleText = this.text.substring(0, this.index);
+            this.consoleElement.innerHTML = visibleText.replace(/\n/g, '<br/>');
+            this.index += this.speed;
+            window.scrollBy(0, 50);
+        }
+    }
+
+    updateCursor() {
+        const content = this.consoleElement.innerHTML;
+        if (content.endsWith('|')) {
+            this.consoleElement.innerHTML = content.slice(0, -1);
         } else {
-          output += '\n';
-          charIndex = 0;
-          currentLine++;
+            this.consoleElement.innerHTML += '|';
         }
-        setTimeout(typeLine, 30);
-      } else {
-        renderInputLine();
-      }
     }
 
-    function enableCommandInput() {
-      const input = terminal.querySelector('.terminal-input');
-
-      input.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          const command = input.value.trim();
-          output += `> ${command}\n`;
-          processCommand(command);
+    handleKey(e) {
+        switch (e.key) {
+            case 'Alt':
+                this.accessCount++;
+                if (this.accessCount >= 3) this.makeAccess?.();
+                break;
+            case 'CapsLock':
+                this.deniedCount++;
+                if (this.deniedCount >= 3) this.makeDenied?.();
+                break;
+            case 'Escape':
+                this.index = this.text.length;
+                break;
+            default:
+                // optionally, handle typing interactions here
+                break;
         }
-      });
 
-      input.focus();
+        if (e.key !== 'F11') {
+            e.preventDefault();
+        }
     }
 
-    function processCommand(command) {
-      if (command === 'projects') {
-        output += 'Opening resume and projects page...\n';
-        terminal.innerHTML = `<pre>${output}</pre>`;
-        setTimeout(() => {
-          window.location.href = 'resume.html';
-        }, 1000);
-      } else {
-        output += 'Unknown command. Try "projects" or "games".\n';
-        renderInputLine();
-      }
+    makeAccess() {
+        alert('Access Granted!');
     }
-    
-    typeLine();
+
+    makeDenied() {
+        alert('Access Denied!');
+    }
+
+    hidepop() {
+        alert('Popup Hidden'); // stub
+    }
+}
+
+const typer = new Typer('intro.txt', 3);
+window.addEventListener('DOMContentLoaded', () => typer.init());
