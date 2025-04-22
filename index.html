@@ -32,7 +32,7 @@
         if (charIndex < line.length) {
           output += line.charAt(charIndex);
           charIndex++;
-          terminal.innerHTML = output + '<span class="cursor"></span>';
+          terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><span class="cursor"></span></div>`;
         } else {
           output += '\n';
           charIndex = 0;
@@ -40,40 +40,35 @@
         }
         setTimeout(typeLine, 30);
       } else {
-        terminal.innerHTML = output + '\n> <span class="cursor"></span>';
+        terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus><span class="cursor"></span></div>`;
         enableCommandInput();
       }
     }
 
     function enableCommandInput() {
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.className = 'terminal-input';
-      input.autofocus = true;
-
-      terminal.appendChild(input);
+      const input = terminal.querySelector('.terminal-input');
 
       input.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
           const command = input.value.trim();
-          input.remove();
+          const inputLine = input.parentElement;
+          inputLine.innerHTML = `> ${command}`;
+          output += `${command}\n`;
           processCommand(command);
         }
       });
     }
 
     function processCommand(command) {
-      output += command + '\n';
-
       if (command === 'projects') {
         output += 'Opening resume and projects page...\n';
-        terminal.innerHTML = output + '<span class="cursor"></span>';
+        terminal.innerHTML = `<pre>${output}</pre>`;
         setTimeout(() => {
           window.location.href = 'resume.html';
         }, 1000);
       } else {
         output += 'Unknown command. Try "projects" or "games".\n';
-        terminal.innerHTML = output + '\n> <span class="cursor"></span>';
+        terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus><span class="cursor"></span></div>`;
         enableCommandInput();
       }
     }
