@@ -1,11 +1,11 @@
-Initializing terminal interface...<br/>
-<!-- kjsdfhkjdhsfkjdshfkj -->...<br/>
-<!-- kjsdfhkjdhsfkjdshfkj -->...<br/>
+Initializing terminal interface.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj --><br/>
+<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj --><br/>
+<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj -->.<!-- kjsdfhkjdhsfkjdshfkj --><br/>
 visitor@terminal:~$ cd ~/portfolio/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
 visitor@terminal~$ cat <!-- kjsdfhkjdhsfkjdshfkj -->intro.txt<br/><br/>
 <!-- sjkfhskjf -->
 
-Welcome to James Tuesday Paschall's digital domain<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+Welcome to <!-- kjsdfhkjdhsfkjdshfkj --> James Tuesday Pasc<!-- kjsdfhkjdhsfkjdshfkj -->hall's digital domain<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 <p>You are stuck here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
 <p>You cannot escape</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
 <p>This is extra.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
