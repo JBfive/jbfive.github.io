@@ -30,7 +30,7 @@
     let output = '';
 
     function renderInputLine() {
-      terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus><span class="cursor"></span></div>`;
+      terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus></div>`;
       enableCommandInput();
     }
 
@@ -40,7 +40,7 @@
         if (charIndex < line.length) {
           output += line.charAt(charIndex);
           charIndex++;
-          renderInputLine();
+          terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span></div>`;
         } else {
           output += '\n';
           charIndex = 0;
@@ -69,7 +69,7 @@
     function processCommand(command) {
       if (command === 'projects') {
         output += 'Opening resume and projects page...\n';
-        renderInputLine();
+        terminal.innerHTML = `<pre>${output}</pre>`;
         setTimeout(() => {
           window.location.href = 'resume.html';
         }, 1000);
@@ -78,7 +78,7 @@
         renderInputLine();
       }
     }
-
+    
     typeLine();
   </script>
 </body>
