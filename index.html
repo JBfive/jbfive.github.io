@@ -29,6 +29,11 @@
     let charIndex = 0;
     let output = '';
 
+    function renderInputLine() {
+      terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus><span class="cursor"></span></div>`;
+      enableCommandInput();
+    }
+
     function typeLine() {
       if (currentLine < lines.length) {
         const line = lines[currentLine];
@@ -43,8 +48,7 @@
         }
         setTimeout(typeLine, 30);
       } else {
-        terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus><span class="cursor"></span></div>`;
-        enableCommandInput();
+        renderInputLine();
       }
     }
 
@@ -54,12 +58,7 @@
       input.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
           const command = input.value.trim();
-          const inputLine = input.parentElement;
-          const promptSpan = document.createElement('span');
-          promptSpan.textContent = '> ' + command;
-          inputLine.innerHTML = '';
-          inputLine.appendChild(promptSpan);
-          output += `${command}\n`;
+          output += `> ${command}\n`;
           processCommand(command);
         }
       });
@@ -76,8 +75,7 @@
         }, 1000);
       } else {
         output += 'Unknown command. Try "projects" or "games".\n';
-        terminal.innerHTML = `<pre>${output}</pre><div class="input-line"><span>> </span><input class="terminal-input" autofocus><span class="cursor"></span></div>`;
-        enableCommandInput();
+        renderInputLine();
       }
     }
 
