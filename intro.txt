@@ -6,10 +6,11 @@ visitor@terminal~$ cat <!-- kjsdfhkjdhsfkjdshfkj -->intro.txt<br/><br/>
 <!-- sjkfhskjf -->
 
 Welcome to<!-- kjsdfhkjdhsfkjdshfkj --> James Tuesday Pasc<!-- kjsddshfkj -->hall's digital domain<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
-<p>You are stuck here.</p> <!-- ksjdokhdfgfkjhafkjhakf -->
-<p>You cannot escape</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
-<p>This is extra.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
+You are stuck here. <!-- ksjdokhdfgfkjhafkjhakf -->
+You cannot escape <!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
+This is extra. <!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
 
-You can also give your email ID for contacting you<!-- slightdelayhere-->, feel free to send me an email at<!-- longlonglongcomment --><a href="Your email ID">Email</a>.<br/>
+THIS SITE IS CURRENTLY UNDER CONSTRUCTION. <!-- kjsdffkjdshfkj -->PARDON THE MESS.
 
-<p></p>
+<!-- slightdelayhere-->Feel free to send me an email at <!-- longlonglongcomment --><a href="beautuesday@gmail.com">beautuesday@gmail.com</a>.<br/>
+visitor@terminal:~$ 
