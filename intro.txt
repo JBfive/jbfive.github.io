@@ -12,5 +12,5 @@ This is extra. <!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
 
 THIS SITE IS CURRENTLY UNDER CONSTRUCTION. <!-- kjsdffkjdshfkj -->PARDON THE MESS.
 
-<!-- slightdelayhere-->Feel free to send me an email at <!-- longlonglongcomment --><a href="beautuesday@gmail.com">beautuesday@gmail.com</a>.<br/>
+<!-- slightdelayhere-->Feel free to send me an email at <!-- longlonglongcomment --><a href="mailto:beautuesday@gmail.com">beautuesday@gmail.com</a>.<br/>
 visitor@terminal:~$ 
