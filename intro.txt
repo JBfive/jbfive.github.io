@@ -1,7 +1,10 @@
 Initializing terminal interface.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj --><br/>
 <!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj --><br/>
 <!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj -->.<!-- kjsdffkjdshfkj --><br/>
-.......................................................................
+.................................................
+.................................................
+.................................................
+
 visitor@terminal:~$ cd ~/portfolio/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
 visitor@terminal~$ cat <!-- kjsdfhkjdhsfkjdshfkj -->intro.txt<br/><br/>
 <!-- sjkfhskjf -->
@@ -10,9 +13,9 @@ Welcome to<!-- kjsdfhkjdhsfkjdshfkj --> James Tuesday Pasc<!-- kjsddshfkj -->hal
 You are stuck here. <!-- ksjdokhdfgfkjhafkjhakf -->
 You cannot escape <!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
 This is extra. <!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
-...
+
+
 THIS SITE IS CURRENTLY UNDER CONSTRUCTION. <!-- kjsdffkjdshfkj -->PARDON THE MESS.
-...
-<!-- kjsdffkhfkj -->.<!-- kjfdshfkj -->.<!-- kjsdfkj -->.<!-- kjdshfkj --><br/>
+
 <!-- slightdelayhere-->Feel free to send me an email at <!-- longlonglongcomment --><a href="mailto:beautuesday@gmail.com">beautuesday@gmail.com</a>.<br/>
 visitor@terminal:~$ 
