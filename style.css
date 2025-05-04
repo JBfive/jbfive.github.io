@@ -44,3 +44,46 @@ body {
     50% { opacity: 0; }
   }
   
+  /* Contact Section */
+  #contDiv {
+    height: 400px;
+    width: 1200px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #contact {
+    height: 200px;
+    width: 425px;
+    margin: auto;
+    
+    
+    justify-content: center;
+    
+    -webkit-transition: all 2.5s ease; /* Safari */
+    transition: all 2.5s ease;
+    }
+
+  #contact:focus {
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+    outline: 0;
+  }
+
+  .icons {
+    display: inline-block;
+    
+  }
+
+  #linkedin {
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+  }
+
+  #github {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+  }
