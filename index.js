@@ -33,7 +33,7 @@ class Typer {
             if (this.index >= this.text.length) {
                 clearInterval(this.typeTimer);
             }
-        }, 35);
+        }, 30);
     }
 
     step() {
