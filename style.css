@@ -12,8 +12,8 @@ body {
     font-family: monospace;
     overflow-x: hidden;
     margin-left:auto;
-	margin-right:auto;
-	margin-top:100px;
+    margin-right:auto;
+    margin-top:100px;
   }
   
   .terminal {
@@ -48,7 +48,7 @@ body {
   #contDiv {
     height: 400px;
     width: 1200px;
-    justify-content: center;
+    justify-content: left;
     margin: auto;
     position: absolute;
     bottom: 10px;
@@ -89,7 +89,7 @@ body {
     width: 30px;
     height: 30px;
   }
-  
+
   footer {
     height: 10px;
     position: relative;
