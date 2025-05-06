@@ -48,7 +48,7 @@ body {
   #contDiv {
     height: 400px;
     width: 1200px;
-    justify-content: left;
+    
     margin: auto;
     position: absolute;
     bottom: 10px;
@@ -57,11 +57,7 @@ body {
   #contact {
     height: 200px;
     width: 425px;
-    margin: auto;
-    
-    
-    justify-content: center;
-    
+    margin: auto;   
     -webkit-transition: all 2.5s ease; /* Safari */
     transition: all 2.5s ease;
     }
