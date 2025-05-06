@@ -48,7 +48,7 @@ body {
   #contDiv {
     height: 400px;
     width: 1200px;
-    
+    align-self: auto;
     margin: auto;
     position: absolute;
     bottom: 10px;
