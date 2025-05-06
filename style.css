@@ -89,3 +89,8 @@ body {
     width: 30px;
     height: 30px;
   }
+  
+  footer {
+    height: 10px;
+    position: relative;
+  }
