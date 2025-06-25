@@ -1,47 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>James Tuesday Paschall | Terminal Interface</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>root@devops:~$ portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="terminal" id="terminal"></div>
+    <div class="screen-container">
+        <div class="crt-lines"></div>
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">root@devops:~$ portfolio</div>
+            </div>
+            
+            <div class="terminal-body">
+                <div class="boot-sequence" id="bootSequence">
+                    <div class="boot-line">BIOS v2.4.1 - DevOps Terminal OS</div>
+                    <div class="boot-line">Initializing portfolio.exe...</div>
+                    <div class="boot-line">Loading personality matrix... OK</div>
+                    <div class="boot-line">Scanning for coffee levels... CRITICAL</div>
+                    <div class="boot-line">Mounting /dev/skills... SUCCESS</div>
+                    <div class="boot-line">Starting network daemons... READY</div>
+                    <div class="boot-line">Welcome to the matrix.</div>
+                </div>
 
-  
+                <div class="main-content" id="mainContent" style="display: none;">
+                    <div class="prompt-line">
+                        <span class="prompt">root@devops:~$ </span>
+                        <span class="command">whoami</span>
+                    </div>
+                    
+                    <div class="ascii-art">
+    ____              ___            
+   / __ \___ _   ____/ __ \____  _____
+  / / / / _ \ | / / / / / / __ \/ ___/
+ / /_/ /  __/ |/ / /_/ / / /_/ (__  ) 
+/_____/\___/|___/\____/_/ .___/____/  
+                       /_/            
+                    </div>
 
-  <!-- Contact Section -->
-  <div id=contDiv>
-    <div id="contact">
-      <h2 class="name"><span class="first">James</span> T Paschall</h2>
-      
-      <a href="mailto:beautuesday@gmail.com">
-          <h5> beautuesday@gmail.com </h5>
-      </a>
-      <h5>206-499-7442</h5>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/jamestuesdaypaschall/" target="_blank">
-          <img id="linkedin" src="images/linkedin.png" alt="linkedin logo">
-        </a>
-      </div>
-      <div class="icons">
-        <a href="https://www.github.com/JBfive" target="_blank">
-          <img id="github" src="images/github.png" alt="github logo">
-        </a>
-        
-      </div>
-      <br>
-      <a href="https://github.com/JBfive/resume/blob/master/James%20T%20Paschall%20Resume.pdf">Downloadable Resume</a>
+                    <div class="info-section">
+                        <p>DevOps Engineer | Cloud Architect | Terminal Enthusiast</p>
+                        <p>Automating the world, one pipeline at a time.</p>
+                    </div>
+
+                    <div class="menu-section">
+                        <div class="prompt-line">
+                            <span class="prompt">root@devops:~$ </span>
+                            <span class="command">ls -la</span>
+                        </div>
+                        <div class="file-listing">
+                            <div class="file-item" onclick="showSection('about')">
+                                <span class="permissions">-rwxr-xr-x</span>
+                                <span class="file-name">about.txt</span>
+                            </div>
+                            <div class="file-item" onclick="showSection('contact')">
+                                <span class="permissions">-rw-r--r--</span>
+                                <span class="file-name">contact.md</span>
+                            </div>
+                            <div class="file-item" onclick="showSection('projects')">
+                                <span class="permissions">drwxr-xr-x</span>
+                                <span class="file-name">projects/</span>
+                            </div>
+                            <div class="file-item" onclick="showSection('games')">
+                                <span class="permissions">drwxr-xr-x</span>
+                                <span class="file-name">games/</span>
+                            </div>
+                            <div class="file-item" onclick="downloadResume()">
+                                <span class="permissions">-rw-r--r--</span>
+                                <span class="file-name">resume.pdf</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-sections">
+                        <!-- About Section -->
+                        <div id="about" class="content-section" style="display: none;">
+                            <div class="prompt-line">
+                                <span class="prompt">root@devops:~$ </span>
+                                <span class="command">cat about.txt</span>
+                            </div>
+                            <div class="section-content">
+                                <p>#!/bin/bash</p>
+                                <p># About Me</p>
+                                <p>echo "Passionate DevOps Engineer with X years of experience"</p>
+                                <p>echo "Specializing in:"</p>
+                                <p>echo "  - Cloud Infrastructure (AWS, Azure, GCP)"</p>
+                                <p>echo "  - Container Orchestration (Docker, Kubernetes)"</p>
+                                <p>echo "  - CI/CD Pipelines (Jenkins, GitLab CI, GitHub Actions)"</p>
+                                <p>echo "  - Infrastructure as Code (Terraform, Ansible)"</p>
+                                <p>echo "  - Monitoring & Observability (Prometheus, Grafana)"</p>
+                                <p>echo "When not automating infrastructure, I enjoy terminal games and ASCII art."</p>
+                            </div>
+                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div id="contact" class="content-section" style="display: none;">
+                            <div class="prompt-line">
+                                <span class="prompt">root@devops:~$ </span>
+                                <span class="command">cat contact.md</span>
+                            </div>
+                            <div class="section-content">
+                                <p># Contact Information</p>
+                                <p>📧 Email: your.email@domain.com</p>
+                                <p>🐙 GitHub: github.com/yourusername</p>
+                                <p>💼 LinkedIn: linkedin.com/in/yourprofile</p>
+                                <p>🐦 Twitter: @yourusername</p>
+                                <p>📍 Location: Your City, State</p>
+                                <p>---</p>
+                                <p>Feel free to reach out for collaboration opportunities!</p>
+                            </div>
+                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
+                        </div>
+
+                        <!-- Projects Section -->
+                        <div id="projects" class="content-section" style="display: none;">
+                            <div class="prompt-line">
+                                <span class="prompt">root@devops:~$ </span>
+                                <span class="command">ls -la projects/</span>
+                            </div>
+                            <div class="section-content">
+                                <div class="project-item">
+                                    <h3>🚀 Kubernetes Auto-Scaler</h3>
+                                    <p>Custom HPA implementation with predictive scaling based on historical metrics.</p>
+                                    <p><strong>Tech:</strong> Go, Kubernetes API, Prometheus</p>
+                                    <a href="https://github.com/yourusername/k8s-autoscaler" target="_blank">View on GitHub →</a>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <h3>🛠️ Infrastructure Template Engine</h3>
+                                    <p>Terraform module generator with best practices and security scanning.</p>
+                                    <p><strong>Tech:</strong> Python, Terraform, Checkov</p>
+                                    <a href="https://github.com/yourusername/infra-templates" target="_blank">View on GitHub →</a>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <h3>📊 DevOps Dashboard</h3>
+                                    <p>Real-time monitoring dashboard for CI/CD pipelines and infrastructure health.</p>
+                                    <p><strong>Tech:</strong> React, Node.js, Grafana API</p>
+                                    <a href="https://github.com/yourusername/devops-dashboard" target="_blank">View on GitHub →</a>
+                                </div>
+                            </div>
+                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
+                        </div>
+
+                        <!-- Games Section -->
+                        <div id="games" class="content-section" style="display: none;">
+                            <div class="prompt-line">
+                                <span class="prompt">root@devops:~$ </span>
+                                <span class="command">ls -la games/</span>
+                            </div>
+                            <div class="games-menu">
+                                <div class="file-item" onclick="startAdventure()">
+                                    <span class="permissions">-rwxr-xr-x</span>
+                                    <span class="file-name">adventure.sh</span>
+                                </div>
+                                <div class="file-item" onclick="startRockPaperScissors()">
+                                    <span class="permissions">-rwxr-xr-x</span>
+                                    <span class="file-name">rps.py</span>
+                                </div>
+                            </div>
+                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
+                        </div>
+
+                        <!-- Adventure Game -->
+                        <div id="adventure" class="content-section" style="display: none;">
+                            <div class="prompt-line">
+                                <span class="prompt">root@devops:~$ </span>
+                                <span class="command">./adventure.sh</span>
+                            </div>
+                            <div id="adventure-content" class="game-content">
+                                <div class="ascii-art">
+       🏰
+      /||\    Welcome to the
+     / || \   DevOps Adventure!
+    |  ||  |
+    |______|
+                </div>
+                <div id="adventure-text">
+                    <p>You are a DevOps engineer on your first day at a new company.</p>
+                    <p>The production server is down, and everyone is looking at you!</p>
+                    <p>What do you do first?</p>
+                </div>
+                <div id="adventure-choices">
+                    <button onclick="adventureChoice('logs')">1. Check the logs</button>
+                    <button onclick="adventureChoice('restart')">2. Restart the server</button>
+                    <button onclick="adventureChoice('panic')">3. Panic and blame the previous DevOps engineer</button>
+                </div>
+            </div>
+            <button class="back-btn" onclick="showSection('games')">← Back to Games</button>
+        </div>
+
+        <!-- Rock Paper Scissors -->
+        <div id="rps" class="content-section" style="display: none;">
+            <div class="prompt-line">
+                <span class="prompt">root@devops:~$ </span>
+                <span class="command">python3 rps.py</span>
+            </div>
+            <div class="game-content">
+                <div class="ascii-art">
+    ⚡ ROCK PAPER SCISSORS ⚡
+   ________________________
+  |  Choose your weapon!    |
+   ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄
+                </div>
+                <div id="rps-score">
+                    <p>You: <span id="player-score">0</span> | Computer: <span id="computer-score">0</span></p>
+                </div>
+                <div id="rps-choices">
+                    <button onclick="playRPS('rock')">
+                        <pre>    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+   ROCK</pre>
+                    </button>
+                    <button onclick="playRPS('paper')">
+                        <pre>    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+     PAPER</pre>
+                    </button>
+                    <button onclick="playRPS('scissors')">
+                        <pre>    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+   SCISSORS</pre>
+                    </button>
+                </div>
+                <div id="rps-result"></div>
+            </div>
+            <button class="back-btn" onclick="showSection('games')">← Back to Games</button>
+        </div>
     </div>
-  </div>
-  <!-- Footer Section -->
-  <footer>
-  
-  </footer>
-  <script type="text/javascript" src="index.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
