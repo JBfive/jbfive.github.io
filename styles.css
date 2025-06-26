@@ -52,7 +52,7 @@ body {
     right: 5%;
     bottom: 5%;
     background: rgba(0, 0, 0, 0.9);
-    border: 2px solid #00ff00;
+    border: 2px solid #2e2f2e;
     border-radius: 8px;
     box-shadow: 
         0 0 20px #00ff00,
@@ -64,7 +64,7 @@ body {
 .terminal-header {
     background: linear-gradient(135deg, #003300, #001100);
     padding: 10px 15px;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 1px solid #2e2f2e;
     display: flex;
     align-items: center;
     justify-content: space-between;
