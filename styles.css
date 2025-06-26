@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Courier Prime', monospace;
-    background: #0a0a0a;
+    background: #ffffff;
     color: #00ff00;
     overflow: hidden;
     height: 100vh;
@@ -22,7 +22,7 @@ body {
         radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%),
         linear-gradient(90deg, transparent 50%, rgba(0, 255, 0, 0.02) 50%);
     background-size: 100% 100%, 4px 4px;
-    animation: flicker 0.15s infinite linear alternate;
+    animation: flicker 0.25s infinite linear alternate;
 }
 
 @keyframes flicker {
@@ -55,7 +55,7 @@ body {
     border: 2px solid #2e2f2e;
     border-radius: 8px;
     box-shadow: 
-        0 0 20px #00ff00,
+        0 0 5px #00ff00,
         inset 0 0 20px rgba(0, 255, 0, 0.1);
     display: flex;
     flex-direction: column;
