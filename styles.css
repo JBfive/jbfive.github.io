@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Courier Prime', monospace;
-    background: #0a0a0a;
+    background: #ffffff;
     color: #00ff00;
     overflow: hidden;
     height: 100vh;
@@ -52,11 +52,11 @@ body {
     right: 5%;
     bottom: 5%;
     background: rgba(0, 0, 0, 0.9);
-    border: 2px solid #00ff00;
+    border: 2px solid #494a49;
     border-radius: 8px;
     box-shadow: 
         0 0 20px #00ff00,
-        inset 0 0 20px rgba(0, 255, 0, 0.1);
+        inset 0 0 5px rgba(0, 255, 0, 0.1);
     display: flex;
     flex-direction: column;
 }
@@ -64,7 +64,7 @@ body {
 .terminal-header {
     background: linear-gradient(135deg, #003300, #001100);
     padding: 10px 15px;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 1px solid #494a49;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,7 +108,7 @@ body {
 .boot-line {
     margin-bottom: 5px;
     opacity: 0;
-    animation: typewriter 0.5s forwards;
+    animation: typewriter 2s forwards;
 }
 
 .boot-line:nth-child(1) { animation-delay: 0.5s; }
@@ -139,6 +139,7 @@ body {
 .command {
     color: #ffff00;
     text-shadow: 0 0 5px #ffff00;
+    animation: typewriter 2s forwards;
 }
 
 .ascii-art {
