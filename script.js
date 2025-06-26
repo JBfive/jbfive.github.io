@@ -415,6 +415,7 @@ function addTerminalEffect() {
 // Initialize terminal effects
 window.addEventListener('DOMContentLoaded', function() {
     addTerminalEffect();
+    setupMobileOptimizations();
     
     // Add welcome message after boot
     setTimeout(() => {
@@ -428,6 +429,134 @@ window.addEventListener('DOMContentLoaded', function() {
 ╚═══════════════════════════════════════╝
         `);
     }, 5000);
+});
+
+// Mobile optimizations
+function setupMobileOptimizations() {
+    // Detect mobile device
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+        // Disable flickering effect on mobile for better performance
+        const screenContainer = document.querySelector('.screen-container');
+        screenContainer.style.animation = 'none';
+        
+        // Add touch-friendly classes
+        document.body.classList.add('mobile-device');
+        
+        // Optimize ASCII art for mobile
+        optimizeAsciiForMobile();
+        
+        // Add mobile-specific event listeners
+        addMobileEventListeners();
+    }
+}
+
+function optimizeAsciiForMobile() {
+    // Smaller ASCII art for mobile devices
+    const mobileAsciiArt = `
+ ____              ___    
+/ __ \___ _   ____/ __ \_ 
+/ / / / _ \ | / / / / / /
+/ /_/ /  __/ |/ / /_/ / 
+/_____/\___/|___/\____/  
+    `;
+    
+    // Update main ASCII art on mobile
+    const mainAscii = document.querySelector('.ascii-art');
+    if (mainAscii && window.innerWidth < 768) {
+        mainAscii.textContent = mobileAsciiArt;
+    }
+}
+
+function addMobileEventListeners() {
+    // Add touch feedback for buttons
+    const buttons = document.querySelectorAll('button, .file-item');
+    buttons.forEach(button => {
+        button.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.95)';
+        });
+        
+        button.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+        });
+    });
+    
+    // Prevent zoom on double tap for game buttons
+    const gameButtons = document.querySelectorAll('#adventure-choices button, #rps-choices button');
+    gameButtons.forEach(button => {
+        button.addEventListener('touchend', function(e) {
+            e.preventDefault();
+        });
+    });
+}
+
+// Responsive ASCII art updates
+function updateAsciiForScreenSize() {
+    const screenWidth = window.innerWidth;
+    
+    if (screenWidth < 480) {
+        // Extra small screens - minimal ASCII
+        updateAdventureAscii('small');
+        updateRPSAscii('small');
+    } else if (screenWidth < 768) {
+        // Mobile screens - medium ASCII
+        updateAdventureAscii('medium');
+        updateRPSAscii('medium');
+    } else {
+        // Desktop screens - full ASCII
+        updateAdventureAscii('full');
+        updateRPSAscii('full');
+    }
+}
+
+function updateAdventureAscii(size) {
+    const adventureAscii = document.querySelector('#adventure-content .ascii-art');
+    if (!adventureAscii) return;
+    
+    const currentScene = adventureStory[adventureState.currentScene];
+    if (!currentScene) return;
+    
+    if (size === 'small') {
+        // Simplified ASCII for very small screens
+        const simpleAscii = currentScene.ascii.split('\n').slice(1, -1).join('\n');
+        adventureAscii.textContent = simpleAscii;
+    } else {
+        adventureAscii.textContent = currentScene.ascii;
+    }
+}
+
+function updateRPSAscii(size) {
+    if (size === 'small') {
+        // Update RPS choices with smaller ASCII
+        const rpsButtons = document.querySelectorAll('#rps-choices button pre');
+        rpsButtons.forEach((pre, index) => {
+            const choices = ['ROCK', 'PAPER', 'SCISSORS'];
+            if (index < choices.length) {
+                pre.textContent = choices[index];
+            }
+        });
+    }
+}
+
+// Handle orientation changes
+window.addEventListener('orientationchange', function() {
+    setTimeout(() => {
+        updateAsciiForScreenSize();
+        
+        // Recalculate terminal height on orientation change
+        const terminal = document.querySelector('.terminal');
+        if (window.innerHeight < 500) {
+            terminal.style.minHeight = 'auto';
+        } else {
+            terminal.style.minHeight = 'calc(100vh - 40px)';
+        }
+    }, 100);
+});
+
+// Handle window resize
+window.addEventListener('resize', function() {
+    updateAsciiForScreenSize();
 });
 
 // Console Easter eggs
