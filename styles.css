@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Courier Prime', monospace;
-    background: #ffffff;
+    background: #0a0a0a;
     color: #00ff00;
     overflow: hidden;
     height: 100vh;
@@ -22,7 +22,7 @@ body {
         radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%),
         linear-gradient(90deg, transparent 50%, rgba(0, 255, 0, 0.02) 50%);
     background-size: 100% 100%, 4px 4px;
-    animation: flicker 0.25s infinite linear alternate;
+    animation: flicker 0.15s infinite linear alternate;
 }
 
 @keyframes flicker {
@@ -52,10 +52,10 @@ body {
     right: 5%;
     bottom: 5%;
     background: rgba(0, 0, 0, 0.9);
-    border: 2px solid #2e2f2e;
+    border: 2px solid #00ff00;
     border-radius: 8px;
     box-shadow: 
-        0 0 5px #00ff00,
+        0 0 20px #00ff00,
         inset 0 0 20px rgba(0, 255, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@ body {
 .terminal-header {
     background: linear-gradient(135deg, #003300, #001100);
     padding: 10px 15px;
-    border-bottom: 1px solid #2e2f2e;
+    border-bottom: 1px solid #00ff00;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -326,33 +326,254 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .screen-container {
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+    }
+    
     .terminal {
-        top: 2%;
-        left: 2%;
-        right: 2%;
-        bottom: 2%;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: auto;
+        margin-bottom: 20px;
+        min-height: calc(100vh - 40px);
+    }
+    
+    .terminal-header {
+        padding: 8px 12px;
+        flex-wrap: wrap;
+    }
+    
+    .terminal-title {
+        font-size: 12px;
+        margin-top: 5px;
     }
     
     .terminal-body {
         padding: 15px;
+        overflow-y: visible;
     }
     
     .ascii-art {
+        font-size: 8px;
+        line-height: 1.1;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .prompt-line {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .prompt {
+        font-size: 12px;
+    }
+    
+    .command {
+        font-size: 12px;
+    }
+    
+    .boot-line {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .file-item {
+        font-size: 12px;
+        padding: 12px 0;
+        flex-wrap: wrap;
+    }
+    
+    .file-item:hover {
+        padding-left: 5px;
+    }
+    
+    .permissions {
         font-size: 10px;
+        margin-right: 10px;
+        margin-bottom: 2px;
+    }
+    
+    .file-name {
+        font-size: 12px;
+    }
+    
+    .section-content {
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    .section-content p {
+        margin-bottom: 12px;
+        line-height: 1.5;
+    }
+    
+    .project-item {
+        margin-bottom: 20px;
+        padding: 12px;
+    }
+    
+    .project-item h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .info-section {
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    .back-btn {
+        padding: 10px 12px;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    /* Game-specific mobile styles */
+    .game-content {
+        padding: 15px;
+    }
+    
+    #adventure-choices {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    #adventure-choices button {
+        width: 100%;
+        padding: 12px;
+        font-size: 12px;
+        text-align: left;
+        margin: 0;
     }
     
     #rps-choices {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
     
     #rps-choices button {
-        width: 100%;
-        max-width: 200px;
+        width: 90%;
+        max-width: 250px;
+        margin: 5px 0;
+        padding: 12px;
+        font-size: 10px;
+    }
+    
+    #rps-choices button pre {
+        font-size: 7px;
+        line-height: 0.9;
+    }
+    
+    #rps-score {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    #rps-result {
+        margin-top: 15px;
+        padding: 12px;
+        font-size: 12px;
+    }
+    
+    .choice-ascii {
+        font-size: 6px;
+        line-height: 0.9;
+        margin: 8px 0;
+    }
+    
+    #adventure-text {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+    .terminal {
+        left: 5px;
+        right: 5px;
+    }
+    
+    .terminal-body {
+        padding: 10px;
+    }
+    
+    .ascii-art {
+        font-size: 7px;
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    
+    .terminal-title {
+        font-size: 10px;
+    }
+    
+    .btn {
+        width: 10px;
+        height: 10px;
     }
     
     .file-item {
-        font-size: 14px;
+        font-size: 11px;
+        padding: 10px 0;
+    }
+    
+    .permissions {
+        font-size: 9px;
+        margin-right: 8px;
+    }
+    
+    .section-content {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .project-item h3 {
+        font-size: 13px;
+    }
+    
+    #rps-choices button pre {
+        font-size: 6px;
+    }
+    
+    .choice-ascii {
+        font-size: 5px;
+    }
+}
+
+/* Landscape orientation fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+    .terminal {
+        top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .terminal-body {
+        padding: 10px;
+    }
+    
+    .ascii-art {
+        font-size: 6px;
+        margin: 10px 0;
+    }
+    
+    .boot-line {
+        margin-bottom: 3px;
     }
 }
 
