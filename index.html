@@ -2,264 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>root@devops:~$ portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="James T. Paschall is a senior site reliability engineer focused on cloud infrastructure, security automation, and compliance-aware engineering.">
+    <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#151a1d" media="(prefers-color-scheme: dark)">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jbfive.github.io/">
+    <meta property="og:title" content="James T. Paschall — Senior Site Reliability Engineer">
+    <meta property="og:description" content="Cloud infrastructure, security automation, and compliance-aware engineering on AWS.">
+    <meta property="og:image" content="https://jbfive.github.io/images/android-chrome-512x512.png">
+    <title>James T. Paschall — Senior Site Reliability Engineer</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="screen-container">
-        <div class="crt-lines"></div>
-        <div class="terminal">
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <span class="btn close"></span>
-                    <span class="btn minimize"></span>
-                    <span class="btn maximize"></span>
-                </div>
-                <div class="terminal-title">James Tuesday Paschall</div>
+    <header class="site-header">
+        <nav class="navigation page-width" aria-label="Main navigation">
+            <a class="wordmark" href="#home">James T. Paschall<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
             </div>
-            
-            <div class="terminal-body">
-                <div class="boot-sequence" id="bootSequence">
-                    <div class="boot-line">BIOS v2.4.1 - DevOps Terminal OS</div>
-                    <div class="boot-line">Initializing portfolio.exe...</div>
-                    <div class="boot-line">Loading personality matrix... OK</div>
-                    <div class="boot-line">Scanning for coffee levels... CRITICAL</div>
-                    <div class="boot-line">Mounting /dev/skills... SUCCESS</div>
-                    <div class="boot-line">Starting network daemons... READY</div>
-                    <div class="boot-line">Welcome to the matrix.</div>
-                </div>
+        </nav>
+    </header>
 
-                <div class="main-content" id="mainContent" style="display: none;">
-                    <div class="prompt-line">
-                        <span class="prompt">root@devops:~$ </span>
-                        <span class="command">whoami</span>
+    <main>
+        <section class="hero page-width" id="home" aria-labelledby="hero-title">
+            <p class="eyebrow">Senior Site Reliability Engineer · Seattle, WA</p>
+            <h1 id="hero-title">James T. Paschall</h1>
+            <p class="hero-tagline">Former acrobat. Current SRE. Still landing on my feet.</p>
+            <p class="hero-copy">I’m Jym. Before I worked in infrastructure, I spent eight years in the circus as an acrobat, an aerialist, and a clown. That’s where I learned to trust the people next to me and to make hard things look easy with an audience watching. Today I find manual operational toil and replace it with automation that quietly makes everyone else’s job easier.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#experience">View my experience</a>
+                <a class="text-link" href="mailto:beautuesday@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="about-content page-width">
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-title">Find the toil.<br>Kill it with code.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>Most recently I was the Guardrails, Terraform, and Compliance subject-matter expert on Duo Security’s Risk &amp; Compliance team at Cisco, where the job was making secure the default instead of the exception.</p>
+                    <p>The work I love is the kind where the painful thing just disappears. One automation I built took our unassigned security ticket backlog from roughly 400 a week to under five.</p>
+                    <p>What matters more to me, though, is the people I work with. I try to be kinder than necessary, unblock whoever’s stuck, and leave every system easier for the next engineer than I found it.</p>
+                    <p>I’m looking for Senior SRE, DevOps, platform, or security and compliance automation roles, remote or in the Seattle area.</p>
+                    <a class="text-link" href="https://github.com/JBfive/resume/blob/master/James%20T%20Paschall%20Resume.pdf" target="_blank" rel="noopener noreferrer">View my resume <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section page-width" id="experience" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Experience</p>
+                    <h2 id="experience-title">How I got here</h2>
+                </div>
+                <a class="text-link" href="https://www.linkedin.com/in/jamestuesdaypaschall/" target="_blank" rel="noopener noreferrer">Full history on LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+            <ol class="timeline">
+                <li class="role">
+                    <div class="role-meta">
+                        <p class="role-dates">2025 — 2026</p>
+                        <p class="role-place">Remote</p>
                     </div>
-                    
-                    <div class="ascii-art">
-    ____             ___            
-   / __ \___ _   __/  _ \__    _____
-  / / / / _ \ | / / / / / __ \/ ___/
- / /_/ /  __/ |/ / /_/ / /_/ (__  ) 
-/_____/\___/|___/\____/ .___/____/  
-                     /_/            
+                    <div class="role-body">
+                        <h3>Senior Site Reliability Engineer</h3>
+                        <p class="role-company">Duo Security (Cisco) · Risk &amp; Compliance</p>
+                        <p class="role-summary">Most of my work lived where “this is a compliance requirement” meets “this needs to be working automation, now.” I built and owned AWS guardrails across Commercial and Federal environments, replaced manual audit and triage work with automation, and carried on-call for critical Federal services.</p>
                     </div>
-
-                    <div class="info-section">
-                        <p>Infrastructure as Code Evangelist</p>
-                        <p>DevOps, Cloud, & Platform Engineering</p>
-                        <p>Automating Everything, One Line at a Time</p>
+                </li>
+                <li class="role">
+                    <div class="role-meta">
+                        <p class="role-dates">2025</p>
+                        <p class="role-place">Remote</p>
                     </div>
-
-                    <div class="menu-section">
-                        <div class="prompt-line">
-                            <span class="prompt">root@devops:~$ </span>
-                            <span class="command">ls -la</span>
-                        </div>
-                        <div class="file-listing">
-                            <div class="file-item" onclick="showSection('about')">
-                                <span class="permissions">-rwxr-xr-x</span>
-                                <span class="file-name">about.txt</span>
-                            </div>
-                            <div class="file-item" onclick="showSection('contact')">
-                                <span class="permissions">-rw-r--r--</span>
-                                <span class="file-name">contact.md</span>
-                            </div>
-                            <div class="file-item" onclick="showSection('projects')">
-                                <span class="permissions">drwxr-xr-x</span>
-                                <span class="file-name">projects/</span>
-                            </div>
-                            <div class="file-item" onclick="showSection('games')">
-                                <span class="permissions">drwxr-xr-x</span>
-                                <span class="file-name">games/</span>
-                            </div>
-                            <div class="file-item" onclick="downloadResume()">
-                                <span class="permissions">-rw-r--r--</span>
-                                <span class="file-name">resume.pdf</span>
-                            </div>
-                        </div>
+                    <div class="role-body">
+                        <h3>Independent Consultant</h3>
+                        <p class="role-company">Next Tuesday, LLC</p>
+                        <p class="role-summary">Between staff roles, I helped clients bring their AWS infrastructure under Terraform, with security built in from day one instead of bolted on before an audit.</p>
                     </div>
+                </li>
+                <li class="role">
+                    <div class="role-meta">
+                        <p class="role-dates">2024</p>
+                        <p class="role-place">Remote</p>
+                    </div>
+                    <div class="role-body">
+                        <h3>Senior Software Engineer, DevOps</h3>
+                        <p class="role-company">Karma Automotive</p>
+                        <p class="role-summary">When Karma acquired the platform I’d been running at Airbiquity, I came with it. I kept paying down years of infrastructure debt, broke our Terraform into smaller modules to shrink the blast radius of every change, and laid the groundwork for containers and faster deployments.</p>
+                    </div>
+                </li>
+                <li class="role">
+                    <div class="role-meta">
+                        <p class="role-dates">2020 — 2024</p>
+                        <p class="role-place">Seattle, WA</p>
+                    </div>
+                    <div class="role-body">
+                        <h3>Senior DevOps Engineer</h3>
+                        <p class="role-company">Airbiquity · promoted from DevOps Engineer</p>
+                        <p class="role-summary">At a small company, I wore a lot of hats: Terraform and infrastructure SME, global operations lead, and the person you called for cloud or data-center network trouble. I pulled dozens of AWS accounts into one secure organization, standardized our Terraform, and mentored engineers along the way.</p>
+                    </div>
+                </li>
+            </ol>
+            <p class="timeline-note">Earlier: freelance web development (2018 — 2020) after a full-stack bootcamp. Before that, eight years in the circus (2005 — 2012), with a stint in business tech support at Speakeasy along the way.</p>
+        </section>
 
-                    <div class="content-sections">
-                        <!-- About Section -->
-                        <div id="about" class="content-section" style="display: none;">
-                            <div class="prompt-line">
-                                <span class="prompt">root@devops:~$ </span>
-                                <span class="command">cat about.txt</span>
-                            </div>
-                            <div class="section-content">
-                                <p>#!/bin/bash</p>
-                                <p># About Me</p>
-                                <p>echo "Passionate DevOps Engineer with X years of experience"</p>
-                                <p>echo "Specializing in:"</p>
-                                <p>echo "  - Cloud Infrastructure (AWS, Azure, GCP)"</p>
-                                <p>echo "  - Container Orchestration (Docker, Kubernetes)"</p>
-                                <p>echo "  - CI/CD Pipelines (Jenkins, GitLab CI, GitHub Actions)"</p>
-                                <p>echo "  - Infrastructure as Code (Terraform, Ansible)"</p>
-                                <p>echo "  - Monitoring & Observability (Prometheus, Grafana)"</p>
-                                <p>echo "When not automating infrastructure, I enjoy terminal games and ASCII art."</p>
-                            </div>
-                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
-                        </div>
-
-                        <!-- Contact Section -->
-                        <div id="contact" class="content-section" style="display: none;">
-                            <div class="prompt-line">
-                                <span class="prompt">root@devops:~$ </span>
-                                <span class="command">cat contact.md</span>
-                            </div>
-                            <div class="section-content">
-                                <p># Contact Information</p>
-                                <p>📧 Email: your.email@domain.com</p>
-                                <p>🐙 GitHub: github.com/yourusername</p>
-                                <p>💼 LinkedIn: linkedin.com/in/yourprofile</p>
-                                <p>🐦 Twitter: @yourusername</p>
-                                <p>📍 Location: Your City, State</p>
-                                <p>---</p>
-                                <p>Feel free to reach out for collaboration opportunities!</p>
-                            </div>
-                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
-                        </div>
-
-                        <!-- Projects Section -->
-                        <div id="projects" class="content-section" style="display: none;">
-                            <div class="prompt-line">
-                                <span class="prompt">root@devops:~$ </span>
-                                <span class="command">ls -la projects/</span>
-                            </div>
-                            <div class="section-content">
-                                <div class="project-item">
-                                    <h3>🚀 Kubernetes Auto-Scaler</h3>
-                                    <p>Custom HPA implementation with predictive scaling based on historical metrics.</p>
-                                    <p><strong>Tech:</strong> Go, Kubernetes API, Prometheus</p>
-                                    <a href="https://github.com/yourusername/k8s-autoscaler" target="_blank">View on GitHub →</a>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <h3>🛠️ Infrastructure Template Engine</h3>
-                                    <p>Terraform module generator with best practices and security scanning.</p>
-                                    <p><strong>Tech:</strong> Python, Terraform, Checkov</p>
-                                    <a href="https://github.com/yourusername/infra-templates" target="_blank">View on GitHub →</a>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <h3>📊 DevOps Dashboard</h3>
-                                    <p>Real-time monitoring dashboard for CI/CD pipelines and infrastructure health.</p>
-                                    <p><strong>Tech:</strong> React, Node.js, Grafana API</p>
-                                    <a href="https://github.com/yourusername/devops-dashboard" target="_blank">View on GitHub →</a>
-                                </div>
-                            </div>
-                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
-                        </div>
-
-                        <!-- Games Section -->
-                        <div id="games" class="content-section" style="display: none;">
-                            <div class="prompt-line">
-                                <span class="prompt">root@devops:~$ </span>
-                                <span class="command">ls -la games/</span>
-                            </div>
-                            <div class="games-menu">
-                                <div class="file-item" onclick="startAdventure()">
-                                    <span class="permissions">-rwxr-xr-x</span>
-                                    <span class="file-name">adventure.sh</span>
-                                </div>
-                                <div class="file-item" onclick="startRockPaperScissors()">
-                                    <span class="permissions">-rwxr-xr-x</span>
-                                    <span class="file-name">rps.py</span>
-                                </div>
-                            </div>
-                            <button class="back-btn" onclick="showMenu()">← Back to Menu</button>
-                        </div>
-
-                        <!-- Adventure Game -->
-                        <div id="adventure" class="content-section" style="display: none;">
-                            <div class="prompt-line">
-                                <span class="prompt">root@devops:~$ </span>
-                                <span class="command">./adventure.sh</span>
-                            </div>
-                            <div id="adventure-content" class="game-content">
-                                <div class="ascii-art">
-       🏰
-      /||\    Welcome to the
-     / || \   DevOps Adventure!
-    |  ||  |
-    |______|
-                </div>
-                <div id="adventure-text">
-                    <p>You are a DevOps engineer on your first day at a new company.</p>
-                    <p>The production server is down, and everyone is looking at you!</p>
-                    <p>What do you do first?</p>
-                </div>
-                <div id="adventure-choices">
-                    <button onclick="adventureChoice('logs')">1. Check the logs</button>
-                    <button onclick="adventureChoice('restart')">2. Restart the server</button>
-                    <button onclick="adventureChoice('panic')">3. Panic and blame the previous DevOps engineer</button>
+        <section class="section section-tight page-width" aria-labelledby="focus-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">What I work with</p>
+                    <h2 id="focus-title">Areas of focus</h2>
                 </div>
             </div>
-            <button class="back-btn" onclick="showSection('games')">← Back to Games</button>
-        </div>
+            <ul class="focus-list">
+                <li>Site reliability <span>SLOs · incident response · disaster recovery · on-call</span></li>
+                <li>Security &amp; compliance <span>Guardrails · SCPs · IAM · SOC 2 · ISO 27001 · CIS</span></li>
+                <li>Cloud &amp; infrastructure <span>AWS · Terraform · CloudFormation · Ansible</span></li>
+                <li>Software &amp; automation <span>Python · Java · Bash · Lambda · CI/CD</span></li>
+                <li>Observability <span>Datadog · CloudWatch · Splunk · Kibana</span></li>
+            </ul>
+        </section>
 
-        <!-- Rock Paper Scissors -->
-        <div id="rps" class="content-section" style="display: none;">
-            <div class="prompt-line">
-                <span class="prompt">root@devops:~$ </span>
-                <span class="command">python3 rps.py</span>
-            </div>
-            <div class="game-content">
-                <div class="ascii-art">
-    ⚡ ROCK PAPER SCISSORS ⚡
-   ________________________
-  |  Choose your weapon!    |
-   ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄ ̄
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-content page-width">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2 id="contact-title">Let’s talk.</h2>
+                    <p>If your team is buried in manual operational work, has an audit on the horizon, or just needs someone to find the toil and kill it, I’d love to hear from you. Bonus points if you have circus stories of your own.</p>
                 </div>
-                <div id="rps-score">
-                    <p>You: <span id="player-score">0</span> | Computer: <span id="computer-score">0</span></p>
-                </div>
-                <div id="rps-choices">
-                    <button onclick="playRPS('rock')">
-                        <pre>
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-   ROCK</pre>
-                    </button>
-                    <button onclick="playRPS('paper')">
-                        <pre> 
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-     PAPER</pre>
-                    </button>
-                    <button onclick="playRPS('scissors')">
-                        <pre>
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-   SCISSORS</pre>
-                    </button>
-                </div>
-                <div id="rps-result"></div>
-            </div>
-            <button class="back-btn" onclick="showSection('games')">← Back to Games</button>
-        </div>
-    </div>
+                <div class="contact-links">
+                    <a href="mailto:beautuesday@gmail.com">beautuesday@gmail.com <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/jamestuesdaypaschall/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a href="https://github.com/JBfive" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <script src="script.js"></script>
+    <footer class="site-footer page-width">
+        <a class="wordmark" href="#home">Top</a>
+        <p>© 2026 James T. Paschall</p>
+    </footer>
 </body>
 </html>
