@@ -634,3 +634,45 @@ p {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* How I work: StandOut strengths */
+.strengths-lead {
+    max-width: 68ch;
+    margin: 0 0 2rem;
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.strength-card {
+    padding: 1.5rem;
+    border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+    border-radius: 12px;
+    background: color-mix(in srgb, currentColor 3%, transparent);
+}
+
+.strength-rank {
+    margin: 0 0 0.25rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.strength-card h3 {
+    margin: 0 0 1rem;
+}
+
+.strength-definition {
+    margin: 0 0 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid color-mix(in srgb, currentColor 35%, transparent);
+    font-style: italic;
+}
+
+.strength-practice {
+    margin: 0;
+}
